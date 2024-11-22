@@ -9,14 +9,14 @@ pipeline {
         stage('Java Execution') {
             steps {
                 bat '''
-                javac HelloWorld.java
-                java HelloWorld
+                javac hello.java
+                java hello
                 '''
             }
         }
         stage('Python Execution') {
             steps {
-                bat 'python script.py'
+                bat 'python say.py'
             }
         }
     }
