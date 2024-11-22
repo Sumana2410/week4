@@ -9,8 +9,8 @@ pipeline {
         stage('Java Execution') {
             steps {
                 bat '''
-                javac week4.hello.java
-                java week4.hello
+                javac hello.java
+                java hello
                 '''
             }
         }
