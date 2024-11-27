@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    environment {
+        PATH = "C:\Users\suman\AppData\Local\Programs\Python\Python312\python.exe"
+    }
     stages {
         stage('Git Clone') {
             steps {
@@ -12,6 +15,10 @@ pipeline {
                 bat 'java hello'
             }
         }
-        
+        stage('python Execution') {
+            steps {
+               bat 'python say.py'
+            }
+        }
     }
 }
