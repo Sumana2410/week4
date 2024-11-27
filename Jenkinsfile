@@ -8,10 +8,8 @@ pipeline {
         }
         stage('Java Execution') {
             steps {
-                bat '''
-                javac hello.java
-                java hello
-                '''
+               bat 'javac hello.java'
+                bat 'java hello'
             }
         }
         stage('Python Execution') {
