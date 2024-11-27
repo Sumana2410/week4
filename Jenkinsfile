@@ -12,10 +12,6 @@ pipeline {
                 bat 'java hello'
             }
         }
-        stage('Python Execution') {
-            steps {
-                bat 'python say.py'
-            }
-        }
+        
     }
 }
