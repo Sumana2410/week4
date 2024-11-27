@@ -1,7 +1,8 @@
 pipeline {
     agent any
     environment {
-        PATH = "C:\\Users\\suman\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+        PATH = "C:/Windows/System32
+"
     }
     stages {
         stage('Git Clone') {
