@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Git Clone') {
             steps {
-                git branch: 'main', url: 'https://github.com/Srivaishnavi08/week4'
+                git branch: 'main', url: 'https://github.com/Sumana2410/pipeline.git'
             }
         }
         stage('Java Execution') {
